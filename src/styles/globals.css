@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-margin {
+    @apply mt-[72px] md:mt-[64px];
+  }
+}
+
+:root {
+  --primary-fg: #ffffff;
+  --primary-bg: #111827;
+}
+
+body {
+  color: var(--primary-fg);
+  background: var(--primary-bg);
+}
+
+button,
+div,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
