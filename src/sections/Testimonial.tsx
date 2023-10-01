@@ -3,8 +3,8 @@ import { BiRightArrowAlt, BiSolidQuoteAltLeft } from "react-icons/bi";
 const Testimonial = () => {
   return (
     <section className="pt-16 flex flex-col gap-12 items-center my-10">
-        <h1 className="text-4xl md:text-2xl font-medium">Our Patients' Words</h1>
-      <div className="px-4 py-6 max-w-5xl sm:max-w-sm mx-auto text-center border-y-4 border-y-gray-700">
+        <h1 className="text-4xl md:text-3xl text-default-gradient">Our Patients' Words</h1>
+      <div className="px-4 py-6 max-w-5xl lg:max-w-3xl md:max-w-xl sm:max-w-sm mx-auto text-center border-y-4 border-y-gray-700">
         <figure className="mx-auto">
           <span className="flex justify-center text-6xl text-primary-green">
             <BiSolidQuoteAltLeft />

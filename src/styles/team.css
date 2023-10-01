@@ -1,7 +1,5 @@
 /* width */
 #scrollbar::-webkit-scrollbar {
-    width: 80%;
-    margin: 12px;
     height: 4px;
     border-radius: 8px;
 }
@@ -14,11 +12,11 @@
 
 /* Handle */
 #scrollbar::-webkit-scrollbar-thumb {
-    background: #168b96;
+    background: #22c55e;
     border-radius: 8px;
 }
 
 /* Handle on hover */
 #scrollbar::-webkit-scrollbar-thumb:hover {
-    background: #186369;
+    background: #16a34a;
 }

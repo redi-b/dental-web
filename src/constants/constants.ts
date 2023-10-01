@@ -37,3 +37,14 @@ export const navLinks = [
     },
   },
 ];
+
+export const Doctors = [{ name: "", specialty: "" }];
+
+export const Services = [
+  { service: "Service 1", info: "Service 1 Info", image: "/smile.jpg" },
+  { service: "Service 2", info: "Service 2 Info", image: "/smile.jpg" },
+  { service: "Service 3", info: "Service 3 Info", image: "/smile.jpg" },
+  { service: "Service 4", info: "Service 4 Info", image: "/smile.jpg" },
+  { service: "Service 5", info: "Service 5 Info", image: "/smile.jpg" },
+  { service: "Service 6", info: "Service 6 Info", image: "/smile.jpg" },
+];

@@ -1,5 +1,6 @@
 import { FaTooth } from "react-icons/fa";
 import { BiCheck } from "react-icons/bi";
+import Image from "next/image";
 
 const Info = () => {
   const checkIconClass =
@@ -8,12 +9,12 @@ const Info = () => {
   return (
     <section className="flex sm:flex-col justify-between h-[90vh] lg:h-[75vh] sm:h-auto w-full">
       <div
-        className="flex items-center justify-center w-full bg-primary-green min-h-[420px] bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "linear-gradient(to bottom , #00000061 0%, #00000061 100%), url('/tools.png')",
-        }}
+        className="relative overflow-hidden flex items-center justify-center w-full bg-primary-green min-h-[420px] bg-cover bg-center"
       >
+        <div className="absolute bottom-0 w-full h-full">
+          <Image src="/tools.png" alt="" fill className="object-cover object-center"/>
+        </div>
+        <div className="absolute w-full h-full bg-black/40"></div>
         <div className="relative flex flex-col items-start gap-4 px-20 py-8 xs:px-12 md:px-16">
           <span className="text-6xl text-gray-900 lg:text-5xl">
             <FaTooth />

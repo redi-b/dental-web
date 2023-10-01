@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Header = () => {
   return (
     <div className="grid grid-cols-[40%_60%] lg:grid-cols-1 lg:py-16">
@@ -14,13 +16,21 @@ const Header = () => {
         <div></div>
         <div className="w-full">
           <div className="p-2 mx-auto bg-white rounded-full w-fit min-lg:hidden">
-            <div
-              className="w-64 h-64 bg-white bg-center bg-no-repeat bg-cover rounded-full md:w-56 md:h-56"
-              style={{
-                backgroundImage:
-                  "linear-gradient(to left , #00000000 75%, #00000040 100%), url('/smile-2.png')",
-              }}
-            ></div>
+            <div className="relative w-64 h-64 overflow-hidden bg-white rounded-full md:w-56 md:h-56">
+              <Image
+                src="/smile-2.png"
+                alt=""
+                fill
+                className="object-cover object-center"
+              />
+              <div
+                className="absolute w-full h-full"
+                style={{
+                  background:
+                    "linear-gradient(to left, #00000000 0%, #00000040 100%)",
+                }}
+              ></div>
+            </div>
           </div>
         </div>
         <div className="relative flex flex-col gap-4 self-end lg:self-start h-fit rounded-[80px] md:rounded-[50px] px-12 py-8 pt-12 mx-4 max-w-lg bg-white/80 text-black shadow-xl backdrop-blur-md">

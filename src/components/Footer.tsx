@@ -11,8 +11,8 @@ import SocialMediaIcon from "@components/SocialMediaIcon";
 
 const Footer = () => {
   return (
-    <footer className="flex items-center justify-center bg-secondary-dark text-secondary-fg text-md w-full pt-6">
-      <div className="flex md:flex-col md:items-center items-start justify-around w-fit min-md:w-full gap-4 md:p-2">
+    <footer className="flex items-center justify-center w-full pt-6 mt-8 bg-secondary-dark text-secondary-fg text-md">
+      <div className="flex items-start justify-around gap-4 md:flex-col md:items-center w-fit min-md:w-full md:p-2">
         <div className="footer-section-1">
           <h1 className="text-base font-bold text-gray-50">
             Working hours (local time)
@@ -35,11 +35,11 @@ const Footer = () => {
               <span>Closed</span>
             </p>
           </div>
-          <div className="flex flex-col items-start w-fit justify-center gap-4 my-8">
+          <div className="flex flex-col items-start justify-center gap-4 my-8 w-fit">
             <h1 className="text-base font-bold text-gray-50">
               Find us on Social Media
             </h1>
-            <div className="flex min-md:self-center gap-2">
+            <div className="flex gap-2 min-md:self-center">
               <SocialMediaIcon style={{ background: "#3b5998" }} link="https://facebook.com">
                 <FaFacebookF />
               </SocialMediaIcon>
@@ -66,7 +66,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="links self-start">
+        <div className="self-start links">
           <h1 className="text-base font-bold text-gray-50">Quick Links</h1>
           <div className="flex flex-col gap-4 my-4 text-sm">
             <a href="" className="hover:text-green-500">

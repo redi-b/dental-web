@@ -9,16 +9,16 @@ interface ServiceCardProps {
 
 const ServiceCard = ({ title, info, imgSrc, link }: ServiceCardProps) => {
   return (
-    <div className="w-full max-w-xs mx-8 overflow-hidden text-black bg-white rounded-md shadow-lg">
+    <div className="w-full max-w-xs sm:w-[280px] mx-8 overflow-hidden text-black bg-white rounded-md shadow-lg">
       <div className="relative h-48">
         <Image src={imgSrc} alt="" fill className="object-cover" />
       </div>
-      <div className="flex flex-col px-6 py-4 gap-2">
-        <div className="text-xl font-medium">{title}</div>
-        <p className="text-base text-gray-700">{info}</p>
+      <div className="flex flex-col px-6 py-4 gap-2 sm:gap-0.5">
+        <div className="px-0.5 text-xl sm:text-lg font-medium">{title}</div>
+        <p className="px-0.5 text-base sm:text-sm text-gray-700">{info}</p>
         <a
           href={link}
-          className="mt-2 px-4 py-3 w-fit text-sm font-medium text-gray-700 transition-all bg-gray-200 rounded-full hover:bg-green-500 hover:text-gray-50"
+          className="mt-2 px-4 py-3 w-fit text-sm sm:text-xs font-medium text-gray-700 transition-all bg-gray-200 rounded-full hover:bg-green-500 hover:text-gray-50"
         >
           Learn more
         </a>
