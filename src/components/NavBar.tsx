@@ -1,6 +1,6 @@
 "use client";
 
-import { navLinks } from "@constants/constants";
+import { NavLinks } from "@constants/constants";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { useEffect, useState } from "react";
 import "@styles/animations.css";
@@ -55,7 +55,7 @@ const NavBar = ({ home = false }: NavBarProps) => {
           {mobileNavShown ? <AiOutlineClose /> : <AiOutlineMenu />}
         </div>
         <ul className="flex items-center gap-4 text-[13px] text-white w-fit xl:hidden">
-          {navLinks.map((link) => (
+          {NavLinks.map((link) => (
             <li className="" key={link.name}>
               <a
                 className={`relative text-center w-full text-sm rounded-xl mx-2 py-0.5 bg-transparent ${
@@ -98,7 +98,7 @@ const NavBar = ({ home = false }: NavBarProps) => {
             : "max-h-0 duration-500"
         } transition-[max-height] ease-in-out`}
       >
-        {navLinks.map((link) => (
+        {NavLinks.map((link) => (
           <li className="p-4" key={link.name}>
             <a
               className={`relative w-fit p-4 cursor-pointer hover:text-secondary-green`}

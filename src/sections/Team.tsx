@@ -1,4 +1,5 @@
 import DoctorInfo from "@components/DoctorInfo";
+import { Doctors } from "@constants/constants";
 import "@styles/team.css";
 
 const Team = () => {
@@ -16,21 +17,13 @@ const Team = () => {
           className="grid items-start grid-flow-col grid-rows-1 gap-16 px-12 py-6 overflow-x-auto \
                    max-w-6xl sm:max-w-[310px] md:px-6 md:py-8 h-fit lg:gap-8 rounded-3xl"
         >
-          <DoctorInfo
-            name="Dr. Abebe Kebede"
-            specialty="Brace Specialist"
-            imgSrc="/profile.jpg"
-          />
-          <DoctorInfo
-            name="Dr. Kebede Abebe"
-            specialty="Cosmology Specialist"
-            imgSrc="/profile.jpg"
-          />
-          <DoctorInfo
-            name="Dr. Mesfin Kebede"
-            specialty="Canal Specialist"
-            imgSrc="/profile.jpg"
-          />
+          {Doctors.map((doctor) => (
+            <DoctorInfo
+              name={doctor.name}
+              specialty={doctor.specialty}
+              imgSrc={doctor.image || "/profile.jpg"}
+            />
+          ))}
         </div>
       </div>
     </div>

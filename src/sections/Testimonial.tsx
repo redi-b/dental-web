@@ -19,7 +19,7 @@ const Testimonial = () => {
           <figcaption className="flex items-center justify-center mt-6 space-x-3">
             <img
               className="object-cover w-6 h-6 rounded-full"
-              src="/smile-2.png"
+              src="/profile.jpg"
             />
             <div className="flex items-center divide-x-2 divide-gray-700">
               <div className="pr-3 font-medium md:text-xs text-white">Abebe Kebede</div>
