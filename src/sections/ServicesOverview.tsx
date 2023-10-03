@@ -3,7 +3,12 @@
 import ServiceCard from "@components/ServiceCard";
 import { Services } from "@constants/constants";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, EffectCoverflow } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  EffectCoverflow,
+  Autoplay,
+} from "swiper/modules";
 import { BiCaretLeft, BiCaretRight } from "react-icons/bi";
 
 import "swiper/css";
@@ -20,13 +25,20 @@ const Test = () => {
       <div className="relative py-4 px-10 sm:px-4 max-w-6xl min-xl:mx-auto">
         <div className="min-lg:px-4">
           <Swiper
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: true,
+              pauseOnMouseEnter: true,
+            }}
             spaceBetween={2}
             effect={"coverflow"}
             grabCursor={true}
             centeredSlides={true}
             slidesPerView={1}
             breakpoints={{
-              767: { slidesPerView: 2 },
+              767: {
+                slidesPerView: 2,
+              },
             }}
             coverflowEffect={{
               rotate: 0,
@@ -35,7 +47,7 @@ const Test = () => {
               slideShadows: false,
               scale: 0.8,
             }}
-            modules={[EffectCoverflow, Navigation, Pagination]}
+            modules={[Navigation, Pagination, EffectCoverflow, Autoplay]}
             navigation={{
               nextEl: ".swiper-button-next",
               prevEl: ".swiper-button-prev",
@@ -49,13 +61,13 @@ const Test = () => {
             loop
           >
             {Services.map((service) => (
-              <SwiperSlide key={service.service}>
+              <SwiperSlide key={service.name}>
                 <div className="flex justify-center">
                   <ServiceCard
-                    title={service.service}
+                    title={service.name}
                     info={service.info}
                     imgSrc={service.image}
-                    link=""
+                    link={service.link}
                   />
                 </div>
               </SwiperSlide>

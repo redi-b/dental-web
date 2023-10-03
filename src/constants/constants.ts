@@ -46,43 +46,51 @@ export const Doctors = [
 
 export const Services = [
   {
-    service: "Teeth Whitening",
+    name: "Teeth Whitening",
     info: "Teeth whitening treatments help remove stains and discoloration, enhancing the brightness of your smile and boosting your confidence.",
     image: "/services/teeth-whitening.jpg",
+    link: ""
   },
   {
-    service: "Teeth Cleaning",
+    name: "Teeth Cleaning",
     info: "Professional teeth cleaning involves removing plaque and tartar buildup from the teeth, helping to prevent tooth decay and gum disease.",
     image: "/services/tooth-cleaning.jpg",
+    link: ""
   },
   {
-    service: "Dental Implants",
+    name: "Dental Implants",
     info: "Dental implants are artificial tooth roots that are surgically placed into the jawbone, providing a strong foundation for replacement teeth.",
     image: "/services/dental-implant.jpg",
+    link: ""
   },
   {
-    service: "Dental Fillings",
+    name: "Dental Fillings",
     info: "Dental fillings are used to repair teeth damaged by decay or minor fractures. They restore the tooth's structure and prevent further decay.",
     image: "/services/dental-filling.jpg",
+    link: ""
   },
   {
-    service: "Dental Crowns",
+    name: "Dental Crowns",
     info: "Dental crowns are tooth-shaped caps that cover damaged or weakened teeth, restoring their shape, size, strength, and appearance.",
     image: "/services/dental-crown.jpg",
+    link: ""
   },
   {
-    service: "Orthodontic Treatment",
+    name: "Orthodontic Treatment",
     info: "Orthodontic treatment corrects misaligned teeth and jaws using braces or aligners, improving both dental health and aesthetics.",
     image: "/services/orthodontic-treatment.jpg",
+    link: ""
   },
   {
-    service: "Root Canal Treatment",
+    name: "Root Canal Treatment",
     info: "Root canal treatment is performed to save a severely infected or decayed tooth by removing the infected pulp and sealing the root canal.",
     image: "/services/root-canal.jpg",
+    link: ""
   },
   {
-    service: "Oral Surgery",
+    name: "Oral Surgery",
     info: "Oral surgery encompasses various procedures, such as tooth extractions, wisdom teeth removal, and corrective jaw surgeries.",
     image: "/services/oral-surgery.jpg",
+    link: ""
   },
 ];
