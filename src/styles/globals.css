@@ -35,3 +35,11 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+.swiper-bullet {
+  @apply bg-gray-500 p-1 rounded-full cursor-pointer
+}
+
+.swiper-bullet-active {
+  @apply bg-primary-green p-1 rounded-full cursor-pointer
+}

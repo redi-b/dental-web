@@ -111,7 +111,7 @@ const NavBar = ({ home = false }: NavBarProps) => {
         ))}
         <li className="p-4">
           <button
-            className="px-4 py-3 text-xs rounded-xl shadow-xl bg-secondary-green hover:bg-secondary-green/80"
+            className="px-4 py-3 text-[13px] rounded-xl shadow-xl bg-secondary-green hover:bg-secondary-green/80"
             onClick={() => setModalOpen(true)}
           >
             Schedule an Appointment

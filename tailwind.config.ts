@@ -29,6 +29,7 @@ const config: Config = {
       md: { max: "767px" },
       sm: { max: "639px" },
       xs: { max: "467px" },
+      xxs: { max: "320px" },
 
       "min-2xl": { min: "1535px" },
       "min-xl": { min: "1124px" },

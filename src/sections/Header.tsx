@@ -34,7 +34,7 @@ const Header = () => {
           </div>
         </div>
         <div className="relative flex flex-col gap-4 self-end lg:self-start h-fit rounded-[80px] md:rounded-[50px] px-12 py-8 pt-12 mx-4 max-w-lg bg-white/80 text-black shadow-xl backdrop-blur-md">
-          <span className="text-4xl font-medium break-normal xl:text-3xl sm:text-2xl">
+          <span className="text-4xl font-medium break-normal xl:text-3xl sm:text-2xl xxs:text-xl">
             Creating beautiful smiles, one patient at a time!
           </span>
           <span className="text-md md:text-sm">
