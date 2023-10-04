@@ -1,5 +1,6 @@
 import Footer from "@components/Footer";
 import NavBar from "@components/NavBar";
+import Connect from "@sections/Connect";
 import Header from "@sections/Header";
 import Info from "@sections/Info";
 import ServicesOverview from "@sections/ServicesOverview";
@@ -14,9 +15,10 @@ export default function Home() {
       <Header />
       <Info />
       <Team />
-      <Testimonial />
       <ServicesOverview />
-      {/* <Test /> */}
+      <Testimonial />
+      <Test />
+      <Connect />
       <Footer />
     </>
   );

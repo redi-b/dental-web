@@ -1,3 +1,4 @@
+import CustomButton from "@components/CustomButton";
 import Image from "next/image";
 
 const Header = () => {
@@ -42,9 +43,11 @@ const Header = () => {
             dental care that prioritizes the wellbeing of our patients. Book an
             appointment now and have a healthy smile!
           </span>
-          <button className="self-center px-4 py-3 text-sm text-white rounded-full appointment-modal-show bg-secondary-green hover:bg-secondary-green/80 w-fit">
-            Book Now
-          </button>
+          <CustomButton
+            text="Book Now"
+            classes="px-4 self-center text-sm w-fit"
+            rounded
+          />
         </div>
         <div className="h-fit">
           CALL US AT <a href="tel:+251900000000">+251 90 000 0000</a>

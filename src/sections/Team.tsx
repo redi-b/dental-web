@@ -22,6 +22,7 @@ const Team = () => {
               name={doctor.name}
               specialty={doctor.specialty}
               imgSrc={doctor.image || "/profile.jpg"}
+              key={doctor.name}
             />
           ))}
         </div>

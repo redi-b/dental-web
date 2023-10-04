@@ -7,6 +7,7 @@ import "@styles/animations.css";
 import Logo from "./Logo";
 import Modal from "./Modal";
 import AppointmentModal from "@sections/AppointmentModal";
+import CustomButton from "./CustomButton";
 
 interface NavBarProps {
   home?: boolean;
@@ -23,7 +24,7 @@ const dropdownStyles =
 const NavBar = ({ home = false }: NavBarProps) => {
   const [mobileNavShown, setMobileNavShown] = useState(false);
   const [landing, setLanding] = useState(false);
-  const [modalOpen, setModalOpen] = useState(false);
+  const [appointmentModalOpen, setAppointmentModalOpen] = useState(false);
 
   useEffect(() => {
     const toggleLanding = () => {
@@ -81,12 +82,11 @@ const NavBar = ({ home = false }: NavBarProps) => {
             </li>
           ))}
           <li>
-            <button
-              className="px-4 py-3 text-[13px] rounded-md shadow-xl bg-secondary-green hover:bg-secondary-green/80"
-              onClick={() => setModalOpen(true)}
-            >
-              Schedule an Appointment
-            </button>
+            <CustomButton
+              classes="px-4 text-[13px] rounded-md shadow-xl"
+              text="Schedule an Appointment"
+              click={() => setAppointmentModalOpen(true)}
+            />
           </li>
         </ul>
       </div>
@@ -110,15 +110,14 @@ const NavBar = ({ home = false }: NavBarProps) => {
           </li>
         ))}
         <li className="p-4">
-          <button
-            className="px-4 py-3 text-[13px] rounded-xl shadow-xl bg-secondary-green hover:bg-secondary-green/80"
-            onClick={() => setModalOpen(true)}
-          >
-            Schedule an Appointment
-          </button>
+          <CustomButton
+            classes="px-4 text-[13px] rounded-md shadow-xl"
+            text="Schedule an Appointment"
+            click={() => setAppointmentModalOpen(true)}
+          />
         </li>
       </ul>
-      <Modal open={modalOpen} setOpen={setModalOpen}>
+      <Modal open={appointmentModalOpen} setOpen={setAppointmentModalOpen}>
         <AppointmentModal />
       </Modal>
     </nav>

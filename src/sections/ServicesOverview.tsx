@@ -18,11 +18,11 @@ import "@styles/swiper.css";
 
 const Test = () => {
   return (
-    <div className="flex flex-col gap-6 px-12 lg:px-2 pt-16">
+    <div className="flex flex-col min-xl:items-center gap-6 px-12 lg:px-2 pt-16">
       <h1 className="text-4xl text-center md:text-3xl text-default-gradient">
         Services Overview
       </h1>
-      <div className="relative py-4 px-10 sm:px-4 max-w-6xl min-xl:mx-auto">
+      <div className="relative py-4 px-10 sm:px-4 max-w-6xl">
         <div className="min-lg:px-4">
           <Swiper
             autoplay={{
@@ -42,8 +42,6 @@ const Test = () => {
             }}
             coverflowEffect={{
               rotate: 0,
-              stretch: 0,
-              modifier: 1,
               slideShadows: false,
               scale: 0.8,
             }}

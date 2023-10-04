@@ -11,7 +11,7 @@ import SocialMediaIcon from "@components/SocialMediaIcon";
 
 const Footer = () => {
   return (
-    <footer className="flex items-center justify-center w-full pt-6 mt-8 bg-secondary-dark text-secondary-fg text-md">
+    <footer className="flex items-center justify-center w-full pt-6 bg-secondary-dark text-secondary-fg text-md">
       <div className="flex items-start justify-around gap-4 md:flex-col md:items-center w-fit min-md:w-full md:p-2">
         <div className="footer-section-1">
           <h1 className="text-base font-bold text-gray-50">
