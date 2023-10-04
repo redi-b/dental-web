@@ -1,8 +1,11 @@
-import React from 'react'
+import Connect from '@sections/Connect'
 
 const ServicesPage = () => {
   return (
-    <div>Services</div>
+    <div>
+      
+      <Connect />
+    </div>
   )
 }
 

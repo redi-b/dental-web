@@ -7,7 +7,6 @@ import {
   Navigation,
   Pagination,
   EffectCoverflow,
-  Autoplay,
 } from "swiper/modules";
 import { BiCaretLeft, BiCaretRight } from "react-icons/bi";
 
@@ -25,11 +24,11 @@ const Test = () => {
       <div className="relative py-4 px-10 sm:px-4 max-w-6xl">
         <div className="min-lg:px-4">
           <Swiper
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: true,
-              pauseOnMouseEnter: true,
-            }}
+            // autoplay={{
+            //   delay: 2500,
+            //   disableOnInteraction: true,
+            //   pauseOnMouseEnter: true,
+            // }}
             spaceBetween={2}
             effect={"coverflow"}
             grabCursor={true}
@@ -45,7 +44,7 @@ const Test = () => {
               slideShadows: false,
               scale: 0.8,
             }}
-            modules={[Navigation, Pagination, EffectCoverflow, Autoplay]}
+            modules={[Navigation, Pagination, EffectCoverflow]}
             navigation={{
               nextEl: ".swiper-button-next",
               prevEl: ".swiper-button-prev",

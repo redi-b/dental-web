@@ -1,8 +1,11 @@
-import React from 'react'
+import Connect from '@sections/Connect'
 
 const AboutPage = () => {
   return (
-    <div>About</div>
+    <div>
+      
+      <Connect />
+    </div>
   )
 }
 

@@ -5,7 +5,7 @@ import Modal from "@components/Modal";
 import { useState } from "react";
 import LocationModal from "./LocationModal";
 
-const Connect = () => {
+const Connect = ({ contact }: { contact?: boolean }) => {
   const [locationModalOpen, setLocationModalOpen] = useState(false);
 
   return (
@@ -29,12 +29,14 @@ const Connect = () => {
               link
               to=""
             />
-            <CustomButton
-              text="Contact Us"
-              classes="w-full rounded-[4px]"
-              link
-              to="/contact"
-            />
+            {contact || (
+              <CustomButton
+                text="Contact Us"
+                classes="w-full rounded-[4px]"
+                link
+                to="/contact"
+              />
+            )}
             <CustomButton
               text="Visit Us"
               classes="w-full rounded-[4px]"
