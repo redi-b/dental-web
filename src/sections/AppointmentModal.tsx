@@ -1,10 +1,13 @@
+import CustomButton from "@components/CustomButton";
 import { BiSolidDownArrow } from "react-icons/bi";
 
 const AppointmentModal = () => {
   const inputStyles =
-    "w-full p-4 py-[13px] bg-gray-600 border-2 border-gray-500 rounded-lg outline-none text-gray-50 focus:border-green-500";
+    "w-full p-4 py-[13px] bg-gray-600 border-2 border-gray-500 transition-all duration-300 \
+     rounded-lg outline-none text-gray-50 focus:border-green-500";
   const radioStyles =
-    "w-full px-6 py-[13px] text-gray-400 transition-all duration-300 cursor-pointer select-none md:px-4 xs:px-3";
+    "w-full px-6 py-[13px] text-gray-400 transition-all duration-300 \
+     cursor-pointer select-none md:px-4 xs:px-3";
 
   return (
     <>
@@ -102,9 +105,7 @@ const AppointmentModal = () => {
               </div>
             </div>
             <div className="flex justify-center">
-              <button className="px-4 py-3 bg-green-500 rounded-md shadow-lg hover:bg-green-600 text-gray-50">
-                Request
-              </button>
+              <CustomButton text="Request" classes="px-4 rounded-md shadow-lg" submit />
             </div>
           </form>
         </div>

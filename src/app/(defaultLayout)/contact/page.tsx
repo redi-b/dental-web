@@ -3,7 +3,9 @@ import Connect from "@sections/Connect";
 import React from "react";
 
 const ContactPage = () => {
-  const inputStyles = "text-sm px-4 py-3 rounded-lg w-full";
+  const inputStyles =
+    "text-sm px-4 py-3 rounded-lg w-full bg-gray-600 outline-none \
+     border-2 border-gray-500 transition-all duration-300 focus:border-primary-green";
 
   return (
     <>
@@ -12,15 +14,17 @@ const ContactPage = () => {
           <h1 className="text-4xl font-bold text-default-gradient sm:self-center">
             Contact Us
           </h1>
-          <p className="text-lg md:text-base">
+          <p className="text-lg md:text-base sm:text-sm">
             We are eager to hear from you and play a part in enhancing your oral
             well-being. If you have any inquiries or would like to reach out to
             us, please don't hesitate to contact us. Our dedicated team will
             respond promptly to address your concerns or assist with scheduling
             an appointment.
           </p>
-          <div className="flex flex-col gap-0.5">
-            <span className="">Addis Ababa, Ethiopia</span>
+          <div className="flex flex-col gap-0.5 text-sm sm:text-xs">
+            <span className="">
+              MB Business Center, 2nd Floor <br /> Chad Street St Lideta Mary Church
+            </span>
             <span className="">+2519 00 000 0000</span>
             <span className="">sayandental@example.com</span>
           </div>
@@ -43,12 +47,17 @@ const ContactPage = () => {
             placeholder="Email (optional)"
           />
           <textarea
-            className={`${inputStyles}`}
+            className={`${inputStyles} resize-none`}
             name="message"
             rows={4}
             placeholder="Message"
+            required
           ></textarea>
-          <CustomButton text="Send" classes="w-full rounded-lg" />
+          <CustomButton
+            text="Send"
+            classes="w-full rounded-lg sm:text-sm"
+            submit
+          />
         </form>
       </div>
       <Connect contact />
