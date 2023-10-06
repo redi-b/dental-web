@@ -18,7 +18,7 @@ const Info = () => {
           />
         </div>
         <div className="absolute w-full h-full bg-black/40"></div>
-        <div className="relative flex flex-col items-start gap-4 px-24 py-8 2xl:px-20 xs:px-12 md:px-16">
+        <div className="relative flex flex-col items-start gap-4 px-44 py-8 2xl:px-20 xs:px-12 md:px-16">
           <span className="text-gray-900 text-7xl 2xl:text-6xl lg:text-5xl">
             <FaTooth />
           </span>

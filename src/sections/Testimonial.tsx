@@ -2,7 +2,7 @@ import { BiRightArrowAlt, BiSolidQuoteAltLeft } from "react-icons/bi";
 
 const Testimonial = () => {
   return (
-    <section className="flex flex-col items-center gap-16 py-16 2xl:gap-12">
+    <section className="flex flex-col items-center justify-center gap-16 py-[10vh] 2xl:gap-12">
       <h1 className="text-5xl 2xl:text-4xl md:text-3xl text-default-gradient">
         Our Patients' Words
       </h1>

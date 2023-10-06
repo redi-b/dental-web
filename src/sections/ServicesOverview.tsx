@@ -13,11 +13,11 @@ import "@styles/swiper.css";
 
 const ServicesOverview = () => {
   return (
-    <div className="flex flex-col justify-center gap-12 px-12 2xl:gap-6 body-container min-xl:items-center lg:px-2">
+    <div className="flex flex-col items-center justify-center gap-12 px-12 2xl:gap-6 body-container lg:px-2">
       <h1 className="text-6xl text-center 2xl:text-4xl md:text-3xl text-default-gradient">
         Services Overview
       </h1>
-      <div className="relative w-[85vw] px-10 py-4 sm:px-4">
+      <div className="relative w-[85vw] sm:w-[95vw] px-10 py-4 sm:px-4">
         <div className="min-lg:px-4">
           <Swiper
             // autoplay={{

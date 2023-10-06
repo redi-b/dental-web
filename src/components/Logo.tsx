@@ -12,11 +12,11 @@ const anton = Anton({ weight: "400", subsets: ["latin"] });
 const Logo = ({ landing = false }: LogoProps) => {
   const normalLogo = (
     <div className="flex items-center justify-between min-xl:pl-10">
-      <div className={`relative w-16 2xl:w-12 sm:w-10 aspect-square`}>
+      <div className={`relative w-[3.5rem] 2xl:w-12 sm:w-10 aspect-square`}>
         <Image src="/logo.png" alt="" fill className="object-contain" />
       </div>
       <span
-        className={`flex justify-center text-white text-5xl 2xl:text-3xl sm:text-2xl mx-2 select-none ${anton.className} transition-all`}
+        className={`flex justify-center text-white text-4xl 2xl:text-3xl sm:text-2xl mx-2 select-none ${anton.className} transition-all`}
       >
         Sayan Dental Clinic
       </span>

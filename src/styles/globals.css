@@ -7,7 +7,7 @@
     @apply mt-[72px] md:mt-[64px];
   }
   .body-container {
-    @apply h-[95vh] lg:h-[75vh] sm:h-auto;
+    @apply h-[95vh] lg:h-[75vh] sm:h-auto sm:min-h-[75vh];
   }
 }
 

@@ -111,7 +111,7 @@ const NavBar = ({ home = false }: NavBarProps) => {
         ))}
         <li className="p-4">
           <CustomButton
-            classes="text-base px-5 2xl:px-4 min-2xl:py-4  rounded-md shadow-xl"
+            classes="text-base 2xl:text-[13px] px-5 2xl:px-4 min-2xl:py-4 rounded-md shadow-xl"
             text="Schedule an Appointment"
             click={() => setAppointmentModalOpen(true)}
           />
