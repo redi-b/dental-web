@@ -1,6 +1,5 @@
 import DoctorInfo from "@components/DoctorInfo";
 import { Doctors } from "@constants/constants";
-import "@styles/team.css";
 
 const Team = () => {
   return (
@@ -15,9 +14,8 @@ const Team = () => {
           happiness.
         </p>
         <div
-          id="scrollbar"
           className="grid items-start grid-flow-col grid-rows-1 gap-16 px-12 py-6 overflow-x-auto \
-                   max-w-7xl 2xl:max-w-6xl sm:max-w-[310px] md:px-6 md:py-8 h-fit lg:gap-8 rounded-3xl"
+                   max-w-7xl 2xl:max-w-6xl md:max-w-xl sm:max-w-[310px] md:px-6 md:py-8 h-fit lg:gap-8 rounded-3xl custom-scrollbar"
         >
           {Doctors.map((doctor) => (
             <DoctorInfo

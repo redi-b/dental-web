@@ -2,18 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .nav-margin {
-    @apply mt-[72px] md:mt-[64px];
-  }
-  .body-container {
-    @apply h-[95vh] lg:h-[75vh] sm:h-auto sm:min-h-[75vh];
-  }
-}
-
 @layer utilities {
+  .nav-margin {
+    @apply mt-[88px] 2xl:mt-[72px] md:mt-[64px];
+  }
+
+  .sticky-top {
+    @apply top-[88px] 2xl:top-[72px] md:top-[64px]
+  }
+
+  .body-container {
+    @apply h-[95vh] sm:min-h-[75vh];
+  }
+
   .text-default-gradient {
     @apply text-transparent bg-clip-text bg-gradient-to-r from-[#2dd451] from-25% to-[#45cddf];
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    /* width */
+    @apply w-2 h-1;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-[#dadada] rounded-2xl;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-primary-green rounded-lg;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-secondary-green;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
   }
 }
 

@@ -10,6 +10,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 import "@styles/swiper.css";
+import { BsArrowRightCircleFill } from "react-icons/bs";
 
 const ServicesOverview = () => {
   return (
@@ -80,6 +81,10 @@ const ServicesOverview = () => {
           style={{ position: "absolute", bottom: "-8px" }}
         ></div>
       </div>
+      <a href="/services" className="flex gap-2 items-center transition-all duration-300 hover:text-primary-green hover:gap-3">
+        <span className="text-base">View all</span>
+        <span className="text-lg"><BsArrowRightCircleFill /></span>
+      </a>
     </div>
   );
 };

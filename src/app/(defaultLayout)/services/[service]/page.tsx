@@ -1,5 +1,14 @@
 const ServicePage = ({ params }: { params: { service: string } }) => {
-  return <div className="flex items-center w-full">This is {params.service} service!</div>;
+  const title = params.service
+    .split("-")
+    .map((word) => word[0].toUpperCase() + word.substring(1))
+    .join(" ");
+
+  return (
+    <>
+      <div className="flex justify-center">{title}</div>
+    </>
+  );
 };
 
 export default ServicePage;

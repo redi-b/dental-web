@@ -9,13 +9,14 @@ export const metadata: Metadata = {
 const ServicesPage = () => {
   return (
     <>
-      <div className="grid gap-6 grid-cols-3 lg:grid-cols-2 sm:grid-cols-1 justify-items-center">
+      <div className="grid gap-6 grid-cols-3 xl:grid-cols-2 sm:grid-cols-1 justify-items-center">
         {Services.map((service) => (
           <MainServiceCard
             title={service.name}
             info={service.info}
             imgSrc={service.image}
             link={service.generateLink()}
+            key={service.name}
           />
         ))}
       </div>
