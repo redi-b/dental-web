@@ -60,7 +60,7 @@ const ServicesOverview = () => {
                     title={service.name}
                     info={service.info}
                     imgSrc={service.image}
-                    link={service.link}
+                    link={service.generateLink()}
                   />
                 </div>
               </SwiperSlide>
