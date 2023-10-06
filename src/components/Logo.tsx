@@ -1,6 +1,6 @@
 import { Anton } from "next/font/google";
 import Image from "next/image";
-import { IoLocationSharp } from "react-icons/io5";
+import { MdLocationPin } from "react-icons/md";
 import "@styles/animations.css";
 
 interface LogoProps {
@@ -12,11 +12,11 @@ const anton = Anton({ weight: "400", subsets: ["latin"] });
 const Logo = ({ landing = false }: LogoProps) => {
   const normalLogo = (
     <div className="flex items-center justify-between min-xl:pl-10">
-      <div className={`relative w-12 sm:w-10 aspect-square`}>
+      <div className={`relative w-16 2xl:w-12 sm:w-10 aspect-square`}>
         <Image src="/logo.png" alt="" fill className="object-contain" />
       </div>
       <span
-        className={`flex justify-center text-white text-3xl sm:text-2xl mx-2 select-none ${anton.className} transition-all`}
+        className={`flex justify-center text-white text-5xl 2xl:text-3xl sm:text-2xl mx-2 select-none ${anton.className} transition-all`}
       >
         Sayan Dental Clinic
       </span>
@@ -34,16 +34,18 @@ const Logo = ({ landing = false }: LogoProps) => {
                     rounded-2xl shadow-2xl"
       >
         <div
-          className={`relative w-12 sm:w-10 aspect-square min-xl:w-20 min-xl:mr-4`}
+          className={`relative w-24 2xl:w-20 xl:w-12 sm:w-10 aspect-square min-xl:mr-4`}
         >
           <Image src="/logo.png" alt="" fill className="object-contain" />
         </div>
         <div
-          className={`flex justify-center text-white text-3xl sm:text-2xl mx-2 select-none ${anton.className} transition-all`}
+          className={`flex justify-center text-white text-4xl 2xl:text-3xl sm:text-2xl mx-2 select-none ${anton.className} transition-all`}
         >
-          <span className="">
-            Sayan <br /> Dental <br /> Clinic
-          </span>
+          <div className="flex flex-col gap-2 2xl:gap-0">
+            <span>Sayan</span>
+            <span>Dental</span>
+            <span>Clinic</span>
+          </div>
         </div>
       </div>
       <a
@@ -51,12 +53,12 @@ const Logo = ({ landing = false }: LogoProps) => {
         target="_blank"
         className="flex items-center h-full py-5 shadow-xl cursor-pointer logo bg-white/70 rounded-2xl hover:scale-95"
       >
-        <span className="text-center text-black text-7xl">
-          <IoLocationSharp />
+        <span className="text-center text-gray-900 text-8xl 2xl:text-7xl">
+          <MdLocationPin />
         </span>
         <img
           src="/location.jpg"
-          className="h-[90px] object-contain mx-3 p-2 bg-white rounded-md"
+          className="h-28 2xl:h-[90px] object-contain mx-3 p-2 bg-white rounded-md"
         />
       </a>
     </div>

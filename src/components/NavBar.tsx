@@ -17,8 +17,8 @@ const linkHoverStyles =
   "before:absolute before:bottom-[-2px] before:h-[3px] before:w-0 before:bg-primary-green \
    before:transition-all before:duration-300 before:rounded-md hover:before:w-full";
 const dropdownStyles =
-  "invisible opacity-0 text-sm peer-hover:opacity-100 peer-hover:visible hover:opacity-100 hover:visible \
-   bg-[#07213a] absolute flex flex-col gap-4 p-4 mx-2 my-3 w-max border -translate-x-12 border-gray-50 \
+  "invisible opacity-0 text-lg 2xl:text-sm peer-hover:opacity-100 peer-hover:visible hover:opacity-100 hover:visible \
+   bg-[#07213a] absolute flex flex-col gap-4 p-4 my-3 w-max border left-1/2 -translate-x-1/2 border-gray-50 \
    shadow-2xl transition-all ease-in-out delay-150";
 
 const NavBar = ({ home = false }: NavBarProps) => {
@@ -41,10 +41,10 @@ const NavBar = ({ home = false }: NavBarProps) => {
       className={`fixed top-0 w-full z-20 transition-all ease-in-out ${
         landing
           ? "bg-transparent max-h-0 duration-500"
-          : "bg-secondary-dark max-h-20 duration-300"
+          : "bg-secondary-dark max-h-24 duration-300"
       }`}
     >
-      <div className="flex items-center justify-between h-full px-4 py-3">
+      <div className="flex items-center justify-between h-full px-4 py-4 2xl:py-3">
         <div className="min-lg:hidden"></div>
         <Logo landing={landing} />
         <div
@@ -57,9 +57,9 @@ const NavBar = ({ home = false }: NavBarProps) => {
         </div>
         <ul className="flex items-center gap-4 text-[13px] text-white w-fit xl:hidden">
           {NavLinks.map((link) => (
-            <li className="" key={link.name}>
+            <li className="relative" key={link.name}>
               <a
-                className={`relative text-center w-full text-sm rounded-xl mx-2 py-0.5 bg-transparent ${
+                className={`relative text-center w-full text-lg 2xl:text-sm rounded-xl mx-2 py-0.5 bg-transparent ${
                   (link.dropdown.exists && "peer") || linkHoverStyles
                 }`}
                 href={link.to}
@@ -83,7 +83,7 @@ const NavBar = ({ home = false }: NavBarProps) => {
           ))}
           <li>
             <CustomButton
-              classes="px-4 text-[13px] rounded-md shadow-xl"
+              classes="px-5 2xl:px-4 min-2xl:py-4 text-base 2xl:text-[13px] rounded-md shadow-xl"
               text="Schedule an Appointment"
               click={() => setAppointmentModalOpen(true)}
             />
@@ -92,7 +92,7 @@ const NavBar = ({ home = false }: NavBarProps) => {
       </div>
       <ul
         id="mobileNav"
-        className={`flex flex-col items-end justify-evenly w-full text-sm bg-[#122335] shadow-2xl overflow-hidden min-xl:hidden ${
+        className={`flex flex-col items-end justify-evenly w-full text-lg 2xl:text-sm bg-[#122335] shadow-2xl overflow-hidden min-xl:hidden ${
           mobileNavShown
             ? "max-h-[1000px] duration-1000"
             : "max-h-0 duration-500"
@@ -111,7 +111,7 @@ const NavBar = ({ home = false }: NavBarProps) => {
         ))}
         <li className="p-4">
           <CustomButton
-            classes="px-4 text-[13px] rounded-md shadow-xl"
+            classes="text-base px-5 2xl:px-4 min-2xl:py-4  rounded-md shadow-xl"
             text="Schedule an Appointment"
             click={() => setAppointmentModalOpen(true)}
           />

@@ -6,6 +6,9 @@
   .nav-margin {
     @apply mt-[72px] md:mt-[64px];
   }
+  .body-container {
+    @apply h-[95vh] lg:h-[75vh] sm:h-auto;
+  }
 }
 
 @layer utilities {

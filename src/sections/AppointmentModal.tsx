@@ -3,18 +3,23 @@ import { BiSolidDownArrow } from "react-icons/bi";
 
 const AppointmentModal = () => {
   const inputStyles =
-    "w-full p-4 py-[13px] bg-gray-600 border-2 border-gray-500 transition-all duration-300 \
+    "w-full text-lg 2xl:text-sm p-4 py-4 2xl:py-[13px] bg-gray-600 border-2 border-gray-500 transition-all duration-300 \
      rounded-lg outline-none text-gray-50 focus:border-green-500";
   const radioStyles =
-    "w-full px-6 py-[13px] text-gray-400 transition-all duration-300 \
+    "w-full text-lg 2xl:text-sm px-6 py-4 2xl:py-[13px] text-gray-400 transition-all duration-300 \
      cursor-pointer select-none md:px-4 xs:px-3";
 
   return (
     <>
       <div className="bg-gray-700">
-        <div className="px-6 py-6 sm:px-4 sm:max-w-sm">
-          <h3 className="my-4 text-2xl text-white">Make an appointment</h3>
-          <form className="space-y-6 text-sm select-none sm:text-xs" action="#">
+        <div className="px-6 py-10 2xl:py-6 sm:px-4 sm:max-w-sm">
+          <h3 className="my-4 text-3xl text-white 2xl:text-2xl">
+            Make an appointment
+          </h3>
+          <form
+            className="space-y-6 text-lg select-none 2xl:text-sm"
+            action="#"
+          >
             <div className="flex gap-2">
               <div className="w-full">
                 <input
@@ -92,7 +97,7 @@ const AppointmentModal = () => {
             <div className="relative">
               <select
                 id="doctors"
-                className="w-full px-4 py-[13px] bg-gray-600 border-2 border-gray-500 rounded-lg appearance-none cursor-pointer text-gray-50 focus:outline-none focus:text-gray-50"
+                className="w-full px-4 py-4 2xl:py-[13px] bg-gray-600 border-2 border-gray-500 rounded-lg appearance-none cursor-pointer text-gray-50 focus:outline-none focus:text-gray-50"
               >
                 <option value="">Dr. Abebe Kebede</option>
                 <option value="">Dr. Kebede Abebe</option>
@@ -105,7 +110,11 @@ const AppointmentModal = () => {
               </div>
             </div>
             <div className="flex justify-center">
-              <CustomButton text="Request" classes="px-4 rounded-md shadow-lg" submit />
+              <CustomButton
+                text="Request"
+                classes="px-5 2xl:px-4 rounded-md shadow-lg text-lg 2xl:text-sm"
+                submit
+              />
             </div>
           </form>
         </div>
