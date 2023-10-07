@@ -12,7 +12,7 @@
   }
 
   .body-container {
-    @apply h-[95vh] lg:h-[85vh] sm:h-auto sm:min-h-[75vh];
+    @apply h-[95vh] lg:h-[90vh] sm:h-auto sm:min-h-[85vh];
   }
 
   .text-default-gradient {

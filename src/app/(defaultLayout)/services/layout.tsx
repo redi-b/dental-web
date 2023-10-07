@@ -85,7 +85,7 @@ const ServicesLayout = ({ children }: { children: React.ReactNode }) => {
                 activeLink == -1
                   ? "bg-primary-green"
                   : "hover:text-primary-green"
-              }`}
+              } transition-all duration-200`}
             >
               All Services
             </Link>
@@ -97,7 +97,7 @@ const ServicesLayout = ({ children }: { children: React.ReactNode }) => {
                     activeLink == index
                       ? "bg-primary-green"
                       : "hover:text-primary-green"
-                  }`}
+                  } transition-all duration-200`}
                 >
                   {service.name}
                 </Link>
