@@ -40,7 +40,7 @@ const ServicesLayout = ({ children }: { children: React.ReactNode }) => {
           </span>
           <a
             href="tel:+251900000000"
-            className="px-12 py-3 bg-secondary-green text-base 2xl:text-sm sm:px-6"
+            className="px-12 py-3 text-base bg-secondary-green 2xl:text-sm sm:px-6"
           >
             CALL US AT +251 90 000 0000
           </a>
@@ -90,18 +90,17 @@ const ServicesLayout = ({ children }: { children: React.ReactNode }) => {
               All Services
             </Link>
             {Services.map((service, index) => (
-              <>
-                <Link
-                  href={service.generateLink()}
-                  className={`flex items-center justify-center p-4 text-center text-xs whitespace-nowrap ${
-                    activeLink == index
-                      ? "bg-primary-green"
-                      : "hover:text-primary-green"
-                  } transition-all duration-200`}
-                >
-                  {service.name}
-                </Link>
-              </>
+              <Link
+                key={index}
+                href={service.generateLink()}
+                className={`flex items-center justify-center p-4 text-center text-xs whitespace-nowrap ${
+                  activeLink == index
+                    ? "bg-primary-green"
+                    : "hover:text-primary-green"
+                } transition-all duration-200`}
+              >
+                {service.name}
+              </Link>
             ))}
           </div>
         </div>

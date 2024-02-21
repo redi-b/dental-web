@@ -3,13 +3,13 @@ import { Services } from "@constants/constants";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Sayan Dental - Services",
+  title: "Demo Dental - Services",
 };
 
 const ServicesPage = () => {
   return (
     <>
-      <div className="grid gap-6 grid-cols-3 xl:grid-cols-2 sm:grid-cols-1 justify-items-center">
+      <div className="grid grid-cols-3 gap-6 xl:grid-cols-2 sm:grid-cols-1 justify-items-center">
         {Services.map((service) => (
           <MainServiceCard
             title={service.name}

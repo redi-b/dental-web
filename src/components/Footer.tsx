@@ -105,7 +105,7 @@ const Footer = () => {
             <div className="flex flex-col">
               <h1 className="text-xl 2xl:text-base">Email</h1>
               <span className="text-[#cacaca] text-lg 2xl:text-sm">
-                sayandental@example.com
+                demodental@example.com
               </span>
             </div>
           </div>

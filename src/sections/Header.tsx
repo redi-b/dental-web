@@ -40,7 +40,7 @@ const Header = () => {
             Creating beautiful smiles, one patient at a time!
           </span>
           <span className="text-xl 2xl:text-base md:text-sm">
-            At Sayan Dental Clinic, we are committed to providing exceptional
+            At Our Dental Clinic, we are committed to providing exceptional
             dental care that prioritizes the wellbeing of our patients. Book an
             appointment now and have a healthy smile!
           </span>

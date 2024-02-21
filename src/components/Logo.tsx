@@ -1,4 +1,4 @@
-import { Anton } from "next/font/google";
+import { Anton, Roboto } from "next/font/google";
 import Image from "next/image";
 import { MdLocationPin } from "react-icons/md";
 import "@styles/animations.css";
@@ -7,7 +7,7 @@ interface LogoProps {
   landing?: boolean;
 }
 
-const anton = Anton({ weight: "400", subsets: ["latin"] });
+const anton = Anton({ weight: "400", subsets: ["latin-ext"] });
 
 const Logo = ({ landing = false }: LogoProps) => {
   const normalLogo = (
@@ -18,7 +18,7 @@ const Logo = ({ landing = false }: LogoProps) => {
       <span
         className={`flex justify-center text-white text-4xl 2xl:text-3xl sm:text-2xl mx-2 select-none ${anton.className} transition-all`}
       >
-        Sayan Dental Clinic
+        Demo Dental Clinic
       </span>
     </div>
   );
@@ -42,14 +42,14 @@ const Logo = ({ landing = false }: LogoProps) => {
           className={`flex justify-center text-white text-4xl 2xl:text-3xl sm:text-2xl mx-2 select-none ${anton.className} transition-all`}
         >
           <div className="flex flex-col gap-2 2xl:gap-0">
-            <span>Sayan</span>
+            <span>Demo</span>
             <span>Dental</span>
             <span>Clinic</span>
           </div>
         </div>
       </div>
       <a
-        href="https://maps.app.goo.gl/Demv1oe8AXzSUj2f8"
+        href="https://maps.app.goo.gl/bjWEA7GfCBErPg5X8"
         target="_blank"
         className="flex items-center h-full py-5 shadow-xl cursor-pointer logo bg-white/70 rounded-2xl hover:scale-95"
       >
@@ -58,6 +58,8 @@ const Logo = ({ landing = false }: LogoProps) => {
         </span>
         <img
           src="/location.jpg"
+          draggable={false}
+          onContextMenu={() => false}
           className="h-28 2xl:h-[90px] object-contain mx-3 p-2 bg-white rounded-md"
         />
       </a>

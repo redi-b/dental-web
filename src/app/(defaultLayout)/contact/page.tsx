@@ -10,8 +10,8 @@ const ContactPage = () => {
   return (
     <>
       <div className="flex sm:flex-col items-center justify-evenly w-full min-md:min-h-[85vh] p-6 sm:gap-6 md:py-12 ">
-        <div className="flex flex-col items-start justify-between w-full max-w-lg 2xl:max-w-md gap-6 font-light">
-          <h1 className="text-5xl 2xl:text-4xl font-bold text-default-gradient sm:self-center">
+        <div className="flex flex-col items-start justify-between w-full max-w-lg gap-6 font-light 2xl:max-w-md">
+          <h1 className="text-5xl font-bold 2xl:text-4xl text-default-gradient sm:self-center">
             Contact Us
           </h1>
           <p className="text-xl 2xl:text-lg md:text-base sm:text-sm">
@@ -26,11 +26,11 @@ const ContactPage = () => {
               MB Business Center, 2nd Floor <br /> Chad Street St Lideta Mary Church
             </span>
             <span className="">+2519 00 000 0000</span>
-            <span className="">sayandental@example.com</span>
+            <span className="">demodental@example.com</span>
           </div>
         </div>
         <form
-          className="flex flex-col items-center w-full h-full max-w-lg 2xl:max-w-sm px-2 gap-4"
+          className="flex flex-col items-center w-full h-full max-w-lg gap-4 px-2 2xl:max-w-sm"
           action=""
         >
           <input

@@ -11,7 +11,7 @@ const AppointmentModal = () => {
 
   return (
     <>
-      <div className="bg-gray-700">
+      <div className="max-w-xl bg-gray-700">
         <div className="px-6 py-10 2xl:py-6 sm:px-4 sm:max-w-sm">
           <h3 className="my-4 text-3xl text-white 2xl:text-2xl">
             Make an appointment

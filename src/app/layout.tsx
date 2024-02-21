@@ -8,8 +8,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Sayan Dental",
-  description: "Sayan Dental Clinic - Creating beautiful smiles!",
+  title: "Demo Dental",
+  description: "Demo Dental Clinic - Creating beautiful smiles!",
 };
 
 export default function RootLayout({

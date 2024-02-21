@@ -13,7 +13,7 @@ const Testimonial = () => {
           </span>
           <blockquote>
             <p className="px-16 text-3xl font-light text-gray-900 2xl:px-12 2xl:text-2xl md:text-base md:px-6 dark:text-white">
-              I had a fantastic experience at Sayan Dental Clinic. The staff was
+              I had a fantastic experience at Demo Dental Clinic. The staff was
               friendly, the facility was clean, and the dental care was
               top-notch. Highly recommended!
             </p>
@@ -28,7 +28,7 @@ const Testimonial = () => {
                 Abebe Kebede
               </div>
               <div className="pl-3 font-light text-gray-400 2xl:text-sm md:text-xs">
-                Sayan Patient
+                Demo Patient
               </div>
             </div>
           </figcaption>
